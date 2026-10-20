@@ -204,7 +204,7 @@
             alert('Your cart is empty! Add some items before proceeding.');
             return;
         }
-        window.location.href = 'checkout.html';
+        window.location.href = 'https://github.com/sakshiflavor/CHECKOUT';
     }
 
     // Auto-refresh every 3 seconds to stay synced with admin changes
