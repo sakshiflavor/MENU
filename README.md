@@ -3,36 +3,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Menu</title>
-    <style>
+<style>
         body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #f9f9f9; padding: 20px; color: #2d3748; display: flex; justify-content: center; margin: 0; }
         .container { width: 100%; max-width: 600px; }
         h2 { color: #1a202c; text-align: center; }
         .category-title { font-size: 18px; font-weight: 600; color: #2b6cb0; margin: 25px 0 12px 0; border-bottom: 2px solid #bee3f8; padding-bottom: 4px; scroll-margin-top: 20px; }
-        
         /* Fixed Corner Category Dropdown */
-        .category-dropdown-container { position: fixed; top: 15px; right: 15px; z-index: 1000; }
+.category-dropdown-container { position: fixed; top: 15px; right: 15px; z-index: 1000; }
         .category-dropdown { background: white; border: 1px solid #cbd5e0; padding: 8px 12px; border-radius: 8px; font-size: 13px; font-weight: 600; color: #2b6cb0; box-shadow: 0 4px 12px rgba(0,0,0,0.08); cursor: pointer; outline: none; }
         .category-dropdown:hover { background: #f7fafc; }
-
         /* Grid layout to nicely display items with top images */
-        .menu-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 15px; }
-        .menu-card { background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.04); border: 1px solid #edf2f7; display: flex; flex-direction: column; text-align: center; padding-bottom: 15px; }
-        
-        .item-img { width: 100%; height: 160px; object-fit: cover; background: #edf2f7; }
-        .item-content { padding: 12px 15px; display: flex; flex-direction: column; align-items: center; flex-grow: 1; justify-content: space-between; gap: 10px; }
-        
-        .item-info { font-size: 16px; font-weight: 600; color: #2d3748; }
-        .item-price { color: #718096; font-size: 14px; margin-top: 2px; }
-        
-        .btn-add { background: #2ed573; color: white; border: none; padding: 8px 20px; border-radius: 6px; font-weight: 600; cursor: pointer; font-size: 14px; width: 100%; }
-        .btn-add:hover { background: #26af5f; }
-        
-        .qty-control { display: flex; align-items: center; justify-content: center; background: #edf2f7; border-radius: 6px; overflow: hidden; border: 1px solid #cbd5e0; width: 100%; }
+.menu-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 15px; }
+        .menu-card { background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.04); border: 1px solid #edf2f7; display: flex; flex-direction: column; text-align: center; padding-bottom: 15px; }        
+.item-img { width: 100%; height: 160px; object-fit: cover; background: #edf2f7; }
+        .item-content { padding: 12px 15px; display: flex; flex-direction: column; align-items: center; flex-grow: 1; justify-content: space-between; gap: 10px; }        
+.item-info { font-size: 16px; font-weight: 600; color: #2d3748; }
+        .item-price { color: #718096; font-size: 14px; margin-top: 2px; }        
+.btn-add { background: #2ed573; color: white; border: none; padding: 8px 20px; border-radius: 6px; font-weight: 600; cursor: pointer; font-size: 14px; width: 100%; }
+        .btn-add:hover { background: #26af5f; }       
+.qty-control { display: flex; align-items: center; justify-content: center; background: #edf2f7; border-radius: 6px; overflow: hidden; border: 1px solid #cbd5e0; width: 100%; }
         .qty-btn { background: #e2e8f0; border: none; padding: 6px 16px; font-weight: bold; cursor: pointer; color: #2d3748; font-size: 15px; }
         .qty-btn:hover { background: #cbd5e0; }
-        .qty-display { padding: 0 16px; font-weight: 600; font-size: 14px; color: #1a202c; }
-
-        .checkout-bar { position: fixed; bottom: 0; left: 0; width: 100%; background: white; padding: 15px; box-shadow: 0 -4px 12px rgba(0,0,0,0.05); text-align: center; box-sizing: border-box; z-index: 999; }
+        .qty-display { padding: 0 16px; font-weight: 600; font-size: 14px; color: #1a202c; }        
+.checkout-bar { position: fixed; bottom: 0; left: 0; width: 100%; background: white; padding: 15px; box-shadow: 0 -4px 12px rgba(0,0,0,0.05); text-align: center; box-sizing: border-box; z-index: 999; }
         .btn-checkout { background: #3182ce; color: white; border: none; padding: 12px 20px; border-radius: 8px; font-weight: 600; font-size: 16px; cursor: pointer; width: 100%; max-width: 560px; transition: background 0.2s; }
         .btn-checkout:hover { background: #2b6cb0; }
     </style>
